@@ -20,7 +20,21 @@ function christmasCountdown() {
 
     const displaySecond = Math.floor((diff%msInMinute) / msInSecond);
     document.querySelector(".seconds").textContent = displaySecond; 
+
+    if (diff <= 0) {
+        document.querySelector(".days").textContent = 0;
+        document.querySelector(".hours").textContent = 0;
+        document.querySelector(".minutes").textContent = 0;
+        document.querySelector(".seconds").textContent = 0;
+        clearInterval(timerID);
+        merryChristmas();
+    }
 }
 
-setInterval(christmasCountdown, 1000);
-christmasCountdown();
+let timerID = setInterval(christmasCountdown, 1000);
+
+function merryChristmas() {
+    const heading = document.querySelector("h1");
+    heading.textContent = "MERRY CHRISTMAS!!! HO-HO-HO!"; 
+    heading.classList.add("red"); 
+}
