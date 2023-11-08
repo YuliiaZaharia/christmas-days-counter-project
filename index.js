@@ -22,4 +22,5 @@ function christmasCountdown() {
     document.querySelector(".seconds").textContent = displaySecond; 
 }
 
+setInterval(christmasCountdown, 1000);
 christmasCountdown();
