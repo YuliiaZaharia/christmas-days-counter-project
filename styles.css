@@ -29,6 +29,8 @@ h1 {
     border: 3px solid black; 
     height: 300px;
     width: 200px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .block {
@@ -50,6 +52,26 @@ h3 {
 .red {
     font-size: 60px;
     border: none; 
-    color: red;
-    font-family: 'Montserrat', sans-serif;
+    color: #D80032;
+    font-family: 'Staatliches', cursive;
+    background-color: rgba(251, 248, 249, 0.9);
+    border-radius: 5px;
 }
+
+button {
+    margin-left: 100px; 
+    border: none;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 800px) {
+    h1 {
+    font-size: 40px;
+     }
+    }
+    
+    @media all and (max-width: 500px) {
+        h1 {
+        font-size: 30px;
+         }
+        }
