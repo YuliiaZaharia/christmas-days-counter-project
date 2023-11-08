@@ -17,3 +17,9 @@ h1 {
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
