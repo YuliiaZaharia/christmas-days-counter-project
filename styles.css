@@ -46,3 +46,10 @@ h3 {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }
+
+.red {
+    font-size: 60px;
+    border: none; 
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+}
